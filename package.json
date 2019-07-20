@@ -11,6 +11,7 @@
     "@angular/platform-browser-dynamic": "^8.0.0",
     "@angular/router": "^8.0.0",
     "@angular/compiler-cli": "~7.0.0",
+    "@angular/cli": "~7.0.2",
     "core-js": "2",
     "rxjs": "^6.5.2",
     "zone.js": "^0.9.1"
