@@ -2,3 +2,4 @@
 .vscode/
 e2e_test.*
 node_modules
+/dist
