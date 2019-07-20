@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+
+.container {
+    width: auto;
+    max-width: 720px;
+    padding: 0 15px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}  

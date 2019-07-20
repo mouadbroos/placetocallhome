@@ -1,0 +1,65 @@
+
+<div class="input-group mt-4 mb-3 align-middle">
+
+  <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon"> Eligible Yearly Income : </div>
+    </div>
+  <input type="number" (keypress)="isNumberKey($event)" class="form-control" placeholder="Eligible Yearly Income" aria-label="Recipient's username" aria-describedby="button-addon2" 
+  [(ngModel)]="this.client.salary">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+    (click)="calculate()"
+    >Calculate</button>
+  </div>
+</div>
+
+<div>
+  <table class="table table-borderless text-left align-middle ">
+  <tbody >
+    <tr>      
+      <td>Incentive Percentage </td>
+      <td class="text-right mb-3">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{this.incentive.incentivePercentage}}
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item"  
+            (click)="setIncentivePercentage(10)">10</a>
+            <a class="dropdown-item" 
+            (click)="setIncentivePercentage(5)">5</a>
+          </div>
+        </div>  
+      </td>      
+    </tr>
+    <tr>      
+      <td>Yearly Income </td>
+      <td class="text-right mb-3">{{ client.salary | number }}</td>      
+    </tr>
+    <tr>      
+      <td>Maximum Mortgage Eligibility </td>
+      <td class="text-right mb-3">{{ client.maximumEligibility | number }}</td>      
+    </tr>
+    <tr>
+      <td>Maximum Property Cost</td>
+      <td class="text-right mb-3">{{ property.propertyCost | number }}</td>
+    </tr>
+    <tr>
+      <td>Minimum Down Payment</td>
+      <td class="text-right mb-3">{{ property.minimumDownPayment | number }}</td>
+    </tr>
+    <tr>      
+      <td>Incentive Amount @{{ incentive.incentivePercentage }}%</td>
+      <td class="text-right mb-3">{{ incentive.incentiveAmount | number }}</td>      
+    </tr>
+
+    <tr>      
+      <td>Actual Mortgage Amount</td>
+      <td class="text-right mb-3">{{ client.maximumEligibility - incentive.incentiveAmount | number }}</td>      
+    </tr>
+  </tbody>
+</table>
+<br />
+<br /> 
+
+</div>

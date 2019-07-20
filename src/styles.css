@@ -1,0 +1,31 @@
+/* Add application styles & imports to this file! */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+.container {
+    width: auto;
+    max-width: 720px;
+    padding: 0 15px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+}  
+
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+  
