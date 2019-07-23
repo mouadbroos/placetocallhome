@@ -63,10 +63,3 @@ export class IncentiveCalculatorComponent implements OnInit {
 			}  
 
 }
-
-//83125
-
-// 332500 + x = y 
-// y * (1 -(5%)) = 332500
-// y = 33250 / (0.95)  
-
