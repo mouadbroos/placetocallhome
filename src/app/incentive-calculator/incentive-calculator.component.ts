@@ -61,5 +61,4 @@ export class IncentiveCalculatorComponent implements OnInit {
 				return false;
 				return true;
 			}  
-
 }

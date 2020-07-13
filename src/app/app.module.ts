@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 import { IncentiveCalculatorComponent } from './incentive-calculator/incentive-calculator.component';
+import { ListingsComponent } from './listings/listings.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, IncentiveCalculatorComponent ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule  ],
+  declarations: [ AppComponent, IncentiveCalculatorComponent, ListingsComponent,  ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
